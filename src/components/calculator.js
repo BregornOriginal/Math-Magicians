@@ -2,6 +2,8 @@ import React from 'react';
 import Button from './buttons/buttons';
 import ButtonCard from './buttons/button-card';
 import ButtonScreen from './buttons/button-screen';
+import calculate from './logic/calculate';
+import operate from './logic/operate';
 
 class Calculator extends React.PureComponent {
   btn = [
