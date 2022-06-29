@@ -1,60 +1,60 @@
 #root {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .display {
   align-items: center;
-	color: white;
-	display: flex;
+  color: white;
+  display: flex;
   font-size: 25px;
-	background-color: rgb(150, 150, 150);
-	justify-content: end;
-	width: 350px;
-	height: 50px;
+  background-color: rgb(150, 150, 150);
+  justify-content: end;
+  width: 350px;
+  height: 50px;
 }
 
 .buttonBox {
-	width: 350px;
-	height: calc(100% - 110px);
-	display: grid;
-	grid-template-columns: repeat(4, 3fr);
-	grid-template-rows: repeat(4, 1fr);
-	grid-gap: 1px;
+  width: 350px;
+  height: calc(100% - 110px);
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1px;
 }
 
 button {
-	border: none;
-	background-color: rgb(185, 185, 185);
-	height: 40px;
-	font-size: 15px;
-	color: rgb(17, 16, 16);
-	cursor: pointer;
-	outline: none;
+  border: none;
+  background-color: rgb(185, 185, 185);
+  height: 40px;
+  font-size: 15px;
+  color: rgb(17, 16, 16);
+  cursor: pointer;
+  outline: none;
 }
 
 button:nth-child(4n + 0) {
-	background-color: rgb(238, 151, 20);
+  background-color: rgb(238, 151, 20);
 }
 
 button:nth-child(18n) {
-	grid-column: 3/4;
+  grid-column: 3/4;
 }
 
 button:nth-child(17n) {
-	grid-column: 1/3;
+  grid-column: 1/3;
 }
 
 button:hover {
-	background-color: rgb(218, 216, 231);
+  background-color: rgb(218, 216, 231);
 }
 
 .equals {
-	grid-column: 4 / 5;
-	background-color: rgb(238, 151, 20);
+  grid-column: 4 / 5;
+  background-color: rgb(238, 151, 20);
 }
 
 .equals:hover {
-	background-color: rgb(220, 233, 185);
+  background-color: rgb(220, 233, 185);
 }
