@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.display {
+.calculator-display {
   align-items: center;
   color: white;
   display: flex;
@@ -34,7 +34,11 @@ button {
   outline: none;
 }
 
-button:nth-child(4n + 0) {
+.buttons-grid__btn--primary:nth-child(4n + 0) {
+  background-color: rgb(238, 151, 20);
+}
+
+.buttons-grid__btn--primary:last-child {
   background-color: rgb(238, 151, 20);
 }
 
@@ -48,13 +52,4 @@ button:nth-child(17n) {
 
 button:hover {
   background-color: rgb(218, 216, 231);
-}
-
-.equals {
-  grid-column: 4 / 5;
-  background-color: rgb(238, 151, 20);
-}
-
-.equals:hover {
-  background-color: rgb(220, 233, 185);
 }
