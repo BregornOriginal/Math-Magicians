@@ -1,28 +1,39 @@
-/* eslint-disable */
-
 import React from 'react';
-import './button.css';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
+import './button.css'
 
-class Button extends React.PureComponent {
-  static propTypes = {
-    className: propTypes.string,
-    value: propTypes.string,
-    OnClick: propTypes.func,
-  }
-
+export default class ButtonsGrid extends React.PureComponent {
   render() {
-    return (
-      <button
-        type="button"
+    const { buttonsRows, handleClickCallback } = this.props;
 
-        className={`${this.props.className} ${'symbol'}`}
-        onClick={this.props.OnClick}
-      >
-        {this.props.value}
-      </button>
+    return (
+      <div className="buttonBox">
+        {buttonsRows.map((row) => (
+          <>
+            {row.map((buttonName, btnIndex) => (
+              <button
+                type="button"
+                key={buttonName}
+                className={`buttons-grid__btn ${btnIndex === row.length - 1
+                  ? 'buttons-grid__btn--primary'
+                  : ''
+                } ${buttonName === '0' ? 'buttons-grid__btn--lg' : ''}`}
+                onClick={() => {
+                  handleClickCallback(buttonName);
+                }}
+              >
+                {buttonName}
+              </button>
+            ))}
+          </>
+        ))}
+      </div>
     );
   }
 }
 
-export default Button;
+ButtonsGrid.propTypes = {
+  buttonsRows: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string).isRequired)
+    .isRequired,
+  handleClickCallback: PropTypes.func.isRequired,
+};
