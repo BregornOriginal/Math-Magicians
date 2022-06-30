@@ -1,6 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# math-magicians
+# Math Magicians
+
+[![uqcUsc.png](https://i.im.ge/2022/06/30/uqcUsc.png)](https://im.ge/i/uqcUsc)
 
 ## "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA)
 
