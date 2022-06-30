@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   box-sizing: border-box;
 }
@@ -29,4 +29,4 @@ input {
 
 .button-row input:last-child {
   background-color: rgb(240, 151, 42);
-}
+} */
