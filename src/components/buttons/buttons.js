@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './button.css'
+import './button.css';
 
 export default class ButtonsGrid extends React.PureComponent {
   render() {
