@@ -1,10 +1,10 @@
-// import styles from './Home.module.css';
 import LoremIpsum from 'react-lorem-ipsum';
+import styles from './Home.module.css';
 
 export default function Home() {
   return (
     <main>
-      <h2>Welcome to our page!</h2>
+      <h2 className={styles.title}>Welcome to our page!</h2>
       <LoremIpsum p={2} />
     </main>
   );

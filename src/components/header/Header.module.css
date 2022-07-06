@@ -4,7 +4,7 @@
 }
 
 .title {
-	font-size: 20px;
+	font-size: 26px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -30,7 +30,12 @@
 }
 
 .header nav a {
+  font-size: 20px;
 	margin-left: 5px;
+}
+
+.header nav a:hover {
+  color: rgb(238, 151, 20)
 }
 
 .header nav a:not(:last-child) {
