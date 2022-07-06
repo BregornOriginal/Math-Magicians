@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-[![uqcUsc.png](../math-magicians/src/screenshoots/calculator-page.png)](calculator-image)
+![Calculator image](https://i.ibb.co/tQ9VQbT/calculator-page.png)
 
 ## "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA)
 
