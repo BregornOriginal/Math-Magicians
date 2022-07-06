@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 26px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 80px 20px;
+  font-family: 'Baloo 2', cursive;
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header nav a {
+  font-size: 20px;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  color: rgb(238, 151, 20);
+}
+
+.header nav a:not(:last-child) {
+  border-right: 1px solid black;
+  border-width: 2px 2px 0 0;
+  padding-right: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 35px;
+  }
+
+  .header nav a {
+    font-size: 30px;
+  }
+}
