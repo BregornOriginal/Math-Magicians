@@ -35,6 +35,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
+      <p>Let&apos;s do some math!</p>
       <div className="calculator-display">{displayedInfo}</div>
       <ButtonsGrid
         buttonsRows={buttonsRows}
