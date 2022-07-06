@@ -1,7 +1,9 @@
 /* eslint-disable react/prefer-stateless-function */
 import { useState } from 'react';
 import calculate from '../../logic/calculate';
+/* eslint-disable */
 import ButtonsGrid from '../../buttons/Buttons';
+/* eslint-disable */
 import styles from './Calculator.module.css';
 
 const Calculator = () => {
