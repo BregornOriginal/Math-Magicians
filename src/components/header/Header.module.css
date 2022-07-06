@@ -23,6 +23,7 @@
 .header nav a {
 	font-size: 20px;
 	margin-left: 5px;
+	text-decoration: none;
 }
 
 .header nav a:hover {
@@ -33,10 +34,6 @@
 	border-right: 1px solid black;
 	border-width: 2px 2px 0 0;
 	padding-right: 5px;
-	/* position: absolute;
-	right: -3px;
-	top: 0;
-	height: 100%; */
 }
 
 @media only screen and (min-width: 768px) {

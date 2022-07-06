@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import calculate from '../../logic/calculate';
 import ButtonsGrid from '../../buttons/Buttons';
+import styles from './Calculator.module.css';
 
 const Calculator = () => {
   const DEFAULT_DISPLAYED_INFO = '0';
@@ -35,12 +36,14 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
-      <p>Let&apos;s do some math!</p>
-      <div className="calculator-display">{displayedInfo}</div>
-      <ButtonsGrid
-        buttonsRows={buttonsRows}
-        handleClickCallback={handleCalculation}
-      />
+      <div className={styles['calculator-container']}>
+        <h1 className={styles.title}>Let&apos;s do some math!</h1>
+        <div className="calculator-display">{displayedInfo}</div>
+        <ButtonsGrid
+          buttonsRows={buttonsRows}
+          handleClickCallback={handleCalculation}
+        />
+      </div>
     </div>
   );
 };
