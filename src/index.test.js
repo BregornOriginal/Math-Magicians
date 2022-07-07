@@ -70,5 +70,4 @@ describe('Snapshot test', () => {
     const quoteCalculator = renderer.create(<QuoteContainer />).toJSON();
     expect(quoteCalculator).toMatchSnapshot();
   });
-
 });
