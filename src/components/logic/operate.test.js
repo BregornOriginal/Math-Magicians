@@ -1,4 +1,4 @@
-import operate from "./operate";
+import operate from './operate';
 
 const NUM_1 = 9;
 const NUM_2 = 14;
@@ -33,8 +33,8 @@ describe('operate() adition', () => {
     const invalidOperation = 'invalid';
     expect(() => {
       operate(1, 2, invalidOperation);
-    }).toThrow(Error)
-  })
+    }).toThrow(Error);
+  });
   test('show an error when a operation is invalid', () => {
     const unableToDivideByZero = 'Can\'t divide by 0.';
     const result = operate(80, 0, '÷');
