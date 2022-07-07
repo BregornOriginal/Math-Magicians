@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot test should render Calculator 1`] = `null`;
+
+exports[`Snapshot test should render Home 1`] = `null`;
+
+exports[`Snapshot test should render Quote 1`] = `null`;
+
+exports[`Snapshot test test App should render and match the Snapshot 1`] = `null`;
