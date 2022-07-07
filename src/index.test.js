@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import App from './App';
 import Calculator from './components/pages/calculator/Calculator';
 
 describe('Calculator actions', () => {
@@ -32,10 +32,10 @@ describe('Snapshot test', () => {
   const Container = () => {
     <BrowserRouter>
       <App />
-    </BrowserRouter>
+    </BrowserRouter>;
   };
   it('test App should render and match the Snapshot', () => {
     const tree = renderer.create(<Container />).toJSON();
     expect(tree).toMatchSnapshot();
-  })
-})
+  });
+});
