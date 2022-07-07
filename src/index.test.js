@@ -4,6 +4,8 @@ import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import Calculator from './components/pages/calculator/Calculator';
+import Home from './components/pages/home/Home';
+import Quote from './components/pages/quote/Quote';
 
 describe('Calculator actions', () => {
   render(<Calculator />);
@@ -38,4 +40,35 @@ describe('Snapshot test', () => {
     const tree = renderer.create(<Container />).toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it('should render Calculator', () => {
+    const AppContainer = () => {
+      <BrowserRouter>
+        <Calculator />
+      </BrowserRouter>;
+    };
+    const testCalculator = renderer.create(<AppContainer />).toJSON();
+    expect(testCalculator).toMatchSnapshot();
+  });
+
+  it('should render Home', () => {
+    const HomeContainer = () => {
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>;
+    };
+    const homeCalculator = renderer.create(<HomeContainer />).toJSON();
+    expect(homeCalculator).toMatchSnapshot();
+  });
+
+  it('should render Quote', () => {
+    const QuoteContainer = () => {
+      <BrowserRouter>
+        <Quote />
+      </BrowserRouter>;
+    };
+    const quoteCalculator = renderer.create(<QuoteContainer />).toJSON();
+    expect(quoteCalculator).toMatchSnapshot();
+  });
+
 });
