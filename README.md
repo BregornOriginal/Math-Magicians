@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link]() ---Soon---
+[Live Demo Link](https://bregorn-calculator.netlify.app/)
 
 ## Build With
 
