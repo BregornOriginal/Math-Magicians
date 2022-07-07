@@ -1,0 +1,32 @@
+/* * {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Magicians {
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+input {
+  border: 1px solid grey;
+  font-size: 20px;
+  height: 40px;
+  width: 35%;
+}
+
+.screen-row input {
+  background-color: rgb(202, 199, 199);
+  border: none;
+  height: 30px;
+}
+
+.button-row {
+  display: flex;
+  width: 35%;
+}
+
+.button-row input:last-child {
+  background-color: rgb(240, 151, 42);
+} */
