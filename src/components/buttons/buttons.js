@@ -1,10 +1,11 @@
 import './button.css';
+import { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 const ButtonsGrid = ({ buttonsRows, handleClickCallback }) => (
   <div className="buttonBox">
-    {buttonsRows.map((row) => (
-      <>
+    {buttonsRows.map((row, rowIndex) => (
+      <Fragment key={`row-${rowIndex + 1}`}>
         {row.map((buttonName, btnIndex) => (
           <button
             type="button"
@@ -18,7 +19,7 @@ const ButtonsGrid = ({ buttonsRows, handleClickCallback }) => (
             {buttonName}
           </button>
         ))}
-      </>
+      </Fragment>
     ))}
   </div>
 );
