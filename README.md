@@ -18,8 +18,6 @@
 
 [Netlify](https://bregorn-calculator.netlify.app/)
 
-[Heroku](https://obscure-inlet-20868.herokuapp.com/)
-
 ## Build With
 
 - CRA (Create React App)
